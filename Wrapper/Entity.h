@@ -36,4 +36,5 @@ namespace CLIWrapper
         private:
             void set(float value) {}
         }
+    };
 }
