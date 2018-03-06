@@ -99,7 +99,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Wrapper\Wrapper.vcxproj">
+    <ProjectReference Include="..\Wrapper\Wrapper.vcxproj">
       <Project>{4d0d97d3-2095-4fce-8222-aea10d4ca4f3}</Project>
       <Name>Wrapper</Name>
     </ProjectReference>
