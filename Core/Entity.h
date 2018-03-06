@@ -1,7 +1,10 @@
 #pragma once
+
+#define DllExport   __declspec( dllexport )
+
 namespace Core
 {
-    class Entity
+    class DllExport Entity
     {
     public:
         const char* m_Name;
