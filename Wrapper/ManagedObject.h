@@ -4,18 +4,17 @@ using namespace System::Runtime::InteropServices;
 
 namespace CLIWrapper
 {
-
+    //  Holds a pointer to an unmanaged object from the Core project
     template<class T>
     public ref class ManagedObject
     {
 
     public:
-        // Constructor
         ManagedObject(T* instance)
             : m_Instance(instance)
-        { }
+        {}
 
-        // Destructor
+        // Destructor - called when object deleted
         virtual ~ManagedObject()
         {
             if (m_Instance != nullptr)
@@ -24,7 +23,7 @@ namespace CLIWrapper
             }
         }
 
-        // Finalizer
+        // Finalizer - called by the garbage collector 
         !ManagedObject()
         {
             if (m_Instance != nullptr)
@@ -33,7 +32,6 @@ namespace CLIWrapper
             }
         }
 
-        // get instance of the object
         T* GetInstance()
         {
             return m_Instance;
