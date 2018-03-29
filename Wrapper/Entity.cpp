@@ -12,7 +12,7 @@ namespace CLIWrapper
 
     void Entity::Move(float deltaX, float deltaY)
     {
-        Console::WriteLine("The Move method from the Wrapper was called!");
+        //Console::WriteLine("The Move method from the Wrapper was called!");
         m_Instance->Move(deltaX, deltaY);
     }
 }
