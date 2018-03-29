@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ManagedObject.h"
-#include "../Core/Core.h"
+#include "Core.h"
 
 using namespace System;
 

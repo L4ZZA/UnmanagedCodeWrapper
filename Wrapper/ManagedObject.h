@@ -10,8 +10,7 @@ namespace CLIWrapper
     {
 
     public:
-        ManagedObject(T* instance)
-            : m_Instance(instance)
+        ManagedObject(T* instance): m_Instance(instance)
         {}
 
         // Destructor - called when object deleted

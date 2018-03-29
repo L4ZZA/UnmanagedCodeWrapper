@@ -8,7 +8,7 @@
 
 namespace Core
 {
-    class Entity
+    class CORE_API Entity
     {
     public:
         const char* m_Name;
