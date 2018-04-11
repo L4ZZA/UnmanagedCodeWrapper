@@ -114,6 +114,7 @@
   <ItemGroup>
     <ClInclude Include="Core.h" />
     <ClInclude Include="Entity.h" />
+    <ClInclude Include="export_api.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Entity.cpp" />
