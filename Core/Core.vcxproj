@@ -115,9 +115,17 @@
     <ClInclude Include="Core.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="export_api.h" />
+    <ClInclude Include="maths\mat4.cpp" />
+    <ClInclude Include="maths\mat4.h" />
+    <ClInclude Include="maths\maths.h" />
+    <ClInclude Include="maths\maths_func.h" />
+    <ClInclude Include="maths\vec2.h" />
+    <ClInclude Include="maths\vec3.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="maths\vec2.cpp" />
+    <ClCompile Include="maths\vec3.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
