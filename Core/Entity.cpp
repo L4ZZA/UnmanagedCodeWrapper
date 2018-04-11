@@ -1,6 +1,7 @@
 #include "Entity.h"
 #include <iostream>
-namespace Core
+
+namespace core
 {
     Entity::Entity(const char* name, maths::vec2 position)
         : m_Name(name), m_position(position)

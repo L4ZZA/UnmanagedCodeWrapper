@@ -1,5 +1,4 @@
 #pragma once
-
 #include "ManagedObject.h"
 #include "Core.h"
 

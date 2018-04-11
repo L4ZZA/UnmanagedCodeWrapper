@@ -2,7 +2,7 @@
 #include "export_api.h"
 #include "maths\maths.h"
 
-namespace Core
+namespace core
 {
     class CORE_API Entity
     {
