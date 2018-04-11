@@ -1,5 +1,6 @@
 #pragma once
 #include "export_api.h"
+#include "maths\maths.h"
 
 namespace Core
 {
@@ -8,12 +9,12 @@ namespace Core
     public:
         const char* m_Name;
     private:
-        float m_XPos, m_YPos;
+        maths::vec2 m_position;
     public:
-        Entity(const char* name, float xPos, float yPos);
+        Entity(const char* name, maths::vec2 position);
 
-        void Move(float deltaX, float deltaY);
-        inline float GetXPosition() const { return m_XPos; };
-        inline float GetYPosition() const { return m_YPos; };
+        void Move(maths::vec2 delta);
+        inline float GetXPosition() const { return m_position.x; };
+        inline float GetYPosition() const { return m_position.y; };
     };
 }

@@ -2,16 +2,14 @@
 #include <iostream>
 namespace Core
 {
-    Entity::Entity(const char* name, float xPos, float yPos)
-        : m_Name(name), m_XPos(xPos), m_YPos(yPos)
+    Entity::Entity(const char* name, maths::vec2 position)
+        : m_Name(name), m_position(position)
     {
         std::cout << "Created the Entity object!" << std::endl;
     }
 
-    void Entity::Move(float deltaX, float deltaY)
+    void Entity::Move(maths::vec2 delta)
     {
-        m_XPos += deltaX;
-        m_YPos += deltaY;
-        //std::cout << "Moved " << m_Name << " to (" << m_XPos << ", " << m_YPos << ")." << std::endl;
+        m_position += delta;
     }
 }
