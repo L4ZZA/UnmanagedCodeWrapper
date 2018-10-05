@@ -8,7 +8,7 @@ namespace CLIWrapper
 {
     // See this docs
     // https://docs.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp
-    public ref class Entity : public ManagedObject<Core::Entity>
+    public ref class Entity : public ManagedObject<core::Entity>
     {
     public:
 

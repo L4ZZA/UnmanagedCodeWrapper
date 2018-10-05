@@ -8,6 +8,25 @@
     Title="MainWindow"
     Width="525"
     Height="350"
+    Closed="OnClosed"
+    KeyDown="OnKeyDown"
+    KeyUp="OnKeyUp"
     mc:Ignorable="d">
-    <Grid />
+    <Canvas
+        x:Name="BackPanel"
+        Margin="5"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Bottom">
+
+        <Rectangle
+            Name="rect"
+            Canvas.Left="-25"
+            Canvas.Bottom="0"
+            Width="50"
+            Height="50"
+            Fill="RoyalBlue"
+            RadiusX="5"
+            RadiusY="5"
+            Stroke="Black" />
+    </Canvas>
 </Window>

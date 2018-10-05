@@ -137,6 +137,11 @@
   <ItemGroup>
     <ClInclude Include="Entity.h" />
     <ClInclude Include="ManagedObject.h" />
+    <ClInclude Include="Mmaths\Mmat4.h" />
+    <ClInclude Include="Mmaths\Mmaths.h" />
+    <ClInclude Include="Mmaths\Mmaths_func.h" />
+    <ClInclude Include="Mmaths\Mvec2.h" />
+    <ClInclude Include="Mmaths\Mvec3.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Stdafx.h" />
     <ClInclude Include="Wrapper.h" />
@@ -144,6 +149,9 @@
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Mmaths\Mmat4.cpp" />
+    <ClCompile Include="Mmaths\Mvec2.cpp" />
+    <ClCompile Include="Mmaths\Mvec3.cpp" />
     <ClCompile Include="Stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

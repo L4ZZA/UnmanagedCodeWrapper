@@ -12,6 +12,7 @@ namespace core
 
             vec2();
             vec2(const float& x, const float& y);
+            vec2(const vec2& other);
 
             vec2& Add(const vec2& other);
             vec2& Subtract(const vec2& other);
@@ -23,6 +24,7 @@ namespace core
             friend vec2& operator*(vec2 left, const vec2& right);
             friend vec2& operator/(vec2 left, const vec2& right);
 
+            void operator=(const vec2& other);
             bool operator==(const vec2& other);
             bool operator!=(const vec2& other);
 

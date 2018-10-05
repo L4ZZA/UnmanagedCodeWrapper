@@ -16,6 +16,12 @@ namespace core
             this->y = y;
         }
 
+        vec2::vec2(const vec2& other)
+        {
+            this->x = other.x;
+            this->y = other.y;
+        }
+
         vec2& vec2::Add(const vec2 & other)
         {
             this->x += other.x;
@@ -66,6 +72,12 @@ namespace core
         vec2& operator/(vec2 left, const vec2& right)
         {
             return left.Divide(right);
+        }
+
+        void vec2::operator=(const vec2 & other)
+        {
+            x = other.x;
+            y = other.y;
         }
 
         bool vec2::operator==(const vec2 & other)

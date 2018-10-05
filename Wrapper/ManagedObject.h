@@ -13,6 +13,9 @@ namespace CLIWrapper
         ManagedObject(T* instance): m_Instance(instance)
         {}
 
+        ManagedObject(ManagedObject<T> obj) : ManagedObject(obj->m_Instance)
+        {}
+
         // Destructor - called when object deleted
         virtual ~ManagedObject()
         {
